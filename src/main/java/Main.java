@@ -32,7 +32,10 @@ public class Main extends Application {
         StringBuilder stringBuilder = new StringBuilder();
 
         for (int i = 0; i < 50; i++) {
-            stringBuilder.append("line-").append(i).append(System.lineSeparator());
+            for (int j = 0; j < 50; j++) {
+                stringBuilder.append("line-");
+            }
+            stringBuilder.append(System.lineSeparator());
         }
 
         return stringBuilder.toString();
