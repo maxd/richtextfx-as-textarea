@@ -4,7 +4,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.TextArea;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import org.fxmisc.flowless.VirtualizedScrollPane;
 import org.fxmisc.richtext.CodeArea;
 
 public class Main extends Application {
@@ -12,7 +11,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception {
         CodeArea codeArea = new CodeArea(longText());
 
-        VirtualizedScrollPane codeAreaScroll = new VirtualizedScrollPane<>(codeArea);
+        VirtualizedScrollPaneExt codeAreaScroll = new VirtualizedScrollPaneExt<>(codeArea);
 
         TextArea textArea = new TextArea(longText());
 
